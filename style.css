@@ -1,0 +1,28 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+#container
+{
+    width: 100vw;  
+    height: 100vh; 
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header
+{
+    background-color: aquamarine;
+    width: 100vw;
+    height: 10%;
+    margin-bottom: 100px;
+}
+.form_body
+{
+    background-color: aqua;
+    width: 50%;
+    height: 50%;
+}
