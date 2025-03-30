@@ -23,6 +23,18 @@
 .form_body
 {
     background-color: aqua;
-    width: 50%;
-    height: 50%;
+    width: 97%;
+    height: 100%;
+    border-top-width: 0px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-style: solid;
+    border-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
 }
