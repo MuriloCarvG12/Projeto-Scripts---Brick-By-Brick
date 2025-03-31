@@ -72,7 +72,7 @@
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    box-shadow: 4px 4px 0px black;
+    
     cursor: pointer;
     transition: transform 0.1s;
 }
@@ -84,4 +84,5 @@
     text-align: center;
     padding: 20px;
     margin-top: auto;
+    border-radius: 20px;
 }
