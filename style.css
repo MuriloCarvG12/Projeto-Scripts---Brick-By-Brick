@@ -105,3 +105,10 @@
     border: 4px solid #d89e00;
     border-radius: 8px;
 }
+
+.store_products_display {
+    width: 80%;
+    height: 800px; /* Ensures the div has a minimum height */
+    background-color: aqua;
+    flex-grow: 1; /* Makes the div take up any available space */
+}
