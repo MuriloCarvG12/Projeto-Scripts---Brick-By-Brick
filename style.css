@@ -86,3 +86,21 @@
     margin-top: auto;
     border-radius: 20px;
 }
+
+.lego_brick_body
+{
+    background-color: #ffce1c;
+    border: 4px solid #d89e00;
+    height: 50%;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.lego_brick_top
+{
+    width: 100px;
+    height: 30px;
+    background-color: #ffce1c;
+    border: 4px solid #d89e00;
+    border-radius: 8px;
+}
