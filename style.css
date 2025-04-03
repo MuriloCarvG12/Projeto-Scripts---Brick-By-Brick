@@ -112,3 +112,13 @@
     background-color: aqua;
     flex-grow: 1; /* Makes the div take up any available space */
 }
+
+.product_card {
+    background-color: aqua;
+    min-height: 400px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
