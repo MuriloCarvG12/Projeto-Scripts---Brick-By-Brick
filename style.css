@@ -114,11 +114,21 @@
 }
 
 .product_card {
-    background-color: aqua;
-    min-height: 400px;
-    min-width: 400px;
+    background-color: rgb(231, 231, 231);
+    min-height: 600px;
+    min-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    justify-content: space-evenly;
+    border: 4px solid #d89e00;
+    border-radius: 8px;
+}
+
+.product_card_head
+{
+    min-height: 100px;
+    min-width: 500px; 
+    background-color: #ffce1c;
 }
