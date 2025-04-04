@@ -23,34 +23,57 @@
 
         <div class="page_body" style="justify-content: space-evenly; width: 60%; flex-direction: column;" >
 
-            <div style="display: flex; flex-direction: column;">
-                <label for="Nome">Digite o seu email!</label>
+            <div style="display: flex; flex-direction: column; margin-top: 40px;">
+                <label for="Nome" style="font-family: 'Poppins'; font-weight: 500; ">Digite o seu email!</label>
                 <input name="Nome" type="text" class="purchase_input">
             </div>
 
             <div style="display: flex; flex-direction: column;">
-                <label for="Nome">Digite o seu CPF!</label>
+                <label for="Nome" style="font-family: 'Poppins'; font-weight: 500; ">Digite o seu CPF!</label>
                 <input name="Nome" type="text" class="purchase_input">
             </div>
 
             <div style="display: flex; flex-direction: column;">
-                <label for="Nome">Digite o seu endereço</label>
+                <label for="Nome" style="font-family: 'Poppins'; font-weight: 500; ">Digite o seu endereço</label>
                 <input name="Nome" type="text" class="purchase_input">
             </div>
 
             <div style="display: flex; flex-direction: column;">
-                <label for="Nome">Digite a senha do seu cartão!</label>
+                <label for="Nome" style="font-family: 'Poppins'; font-weight: 500; ">Digite a senha do seu cartão!</label>
                 <input name="Nome" type="text" class="purchase_input">
             </div>
 
-            <div style="display: flex; flex-direction: column;">
-                <label for="Nome">Digite o código de segurança do seu cartão!</label>
+            <div style="display: flex; flex-direction: column; margin-bottom: 40px;">
+                <label for="Nome" style="font-family: 'Poppins'; font-weight: 500; ">Digite o código de segurança do seu cartão!</label>
                 <input name="Nome" type="text" class="purchase_input">
             </div>
-
-            <button class="lego-button" style="margin-bottom: 25px;">Comprar</button>
-
+            <!-- Divs para o botao Comprar estilizados para parecer um bloco de lego-->
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 30%; margin-bottom: 50px; height: 80%; ">  
+                <div id="lego_brick_top" style="display: flex; flex-direction: row; width: 100%; justify-content: space-around;">
+                    <div class="lego_brick_top"></div>
+                    <div class="lego_brick_top"></div>
+                </div>
+                <div class="lego_brick_body" style="width: 100%; height: 20%;">
+                    <div style="display:flex; flex-direction:column; gap: 30px;">
+                        <button class="lego-button" style="margin-bottom: 25px;">Comprar</button>
+                </div>                  
+            </div>      
         </div>
+
+        <!-- Divs para o botao Cancelar estilizados para parecer um bloco de lego-->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 30%; margin-bottom: 50px; height: 80%;">  
+            <div id="lego_brick_top" style="display: flex; flex-direction: row; width: 100%; justify-content: space-around;">
+                <div class="lego_brick_top"></div>
+                <div class="lego_brick_top"></div>
+            </div>
+            <div class="lego_brick_body" style="width: 100%; height: 20%;">
+                <div style="display:flex; flex-direction:column; gap: 30px;">
+                    <button class="lego-button" style="margin-bottom: 25px;">Cancelar</button>
+            </div>                  
+        </div>
+          
+        
+    
 
     </div>
 
