@@ -108,9 +108,9 @@
 
 .store_products_display {
     width: 80%;
-    height: 800px; /* Ensures the div has a minimum height */
+    height: 800px; 
     background-color: aqua;
-    flex-grow: 1; /* Makes the div take up any available space */
+    flex-grow: 1; 
 }
 
 .product_card {
@@ -121,11 +121,35 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    justify-content: space-evenly;
-    border: 4px solid #d89e00;
-    border-top: 0px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+}
+
+.page_payment
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 700px;
+    background-color: #FCE883;
+    margin: 0;
+    margin-bottom: 10%;
+    padding: 24px;
+    gap: 24px;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ff7d03; 
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.purchase_input
+{
+    width: 100%;
+    height: 20px;
+
+   
     
 }
 
@@ -139,4 +163,5 @@
     border-top-right-radius: 8px;
     text-align: center;
     padding-top: 20px;
+
 }
