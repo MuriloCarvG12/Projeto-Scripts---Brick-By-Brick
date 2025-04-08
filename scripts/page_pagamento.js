@@ -1,6 +1,10 @@
+import validateCPF from "./cpf_check.js"
+
 document
 .getElementById("page_payment")
 .addEventListener("submit", payment)
+
+
 
 // 
 const url = new URL(window.location.href)
@@ -17,7 +21,7 @@ function payment(event)
     const adress = document.getElementById("purchase-endereço").value
     const card_password = document.getElementById("purchase-senha_cartao").value
     const card_security_code = document.getElementById("purchase-codigo-cartao").value
-    let cpf_check = 1
+    
 
     if(email == "")
         {
@@ -84,7 +88,8 @@ function payment(event)
             document.getElementById("purchase-codigo-cartao").placeholder = ''
         }
 
-    if(email && adress && card_password && card_security_code != "" && cpf_check == 1)
+    
+    if(email && adress && card_password && card_security_code != "" && validateCPF(cpf))
         {
             alert("ok!")
         }
