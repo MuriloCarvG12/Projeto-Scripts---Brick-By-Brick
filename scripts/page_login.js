@@ -10,11 +10,11 @@ function perform_login(event)
 
     if(name != "teste@teste" && password != "teste")
         {
-            document.getElementById('error-text').innerText= 'O USUARIO OU A SENHA INCORRETOS'
+            document.getElementById('error-text').innerText= 'USUARIO OU SENHA INCORRETOS'
             document.getElementById('field_username').style.borderStyle = 'Solid'
             document.getElementById('field_username').style.borderColor = 'Red'
 
-            document.getElementById('error-text-password').innerText= 'O USUARIO OU A SENHA INCORRETOS'
+            document.getElementById('error-text-password').innerText= 'USUARIO OU SENHA INCORRETOS'
             document.getElementById('field_password').style.borderStyle = 'Solid'
             document.getElementById('field_password').style.borderColor = 'Red'
         }
