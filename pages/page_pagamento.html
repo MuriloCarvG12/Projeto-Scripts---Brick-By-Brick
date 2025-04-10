@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Brick By Brick</title>
         <link rel="stylesheet" href=".././style.css">
+        <link rel="icon" type="image/x-icon" href="../images/logo.png">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&display=swap" rel="stylesheet">
     </head>
@@ -18,6 +19,7 @@
             </div>
         </div>
 
+        <!-- Header para o formulario de compras!-->
         <div id="lego_brick_top" style="display: flex; flex-direction: row; width: 73%; justify-content: space-around;">
             <div class="lego_brick_top" style="background-color: #ff7d03; border-color: #b95b03; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"></div>
             <div class="lego_brick_top" style="background-color: #ff7d03; border-color: #b95b03;"></div>
@@ -25,9 +27,12 @@
             <div class="lego_brick_top" style="background-color: #ff7d03; border-color: #b95b03; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"></div>
             
         </div>
+
+        <!-- conteudo do ehader para formulario de compras-->
         <div style="background-color: #ff7d03; width: 90%; border-color: #b95b03; border-style: solid; border-width: 5px; text-align: center; padding-top: 2%; padding-bottom: 1%; width: 60%;">
             <h1 style="font-family: 'Poppins'; font-size: xx-large; font-weight: 500; color: white;">Finalizar Compra!</h1>
-            <h1 style="font-family: 'Poppins'; font-size: xx-large; font-weight: 500; color: white;" id="product">Finalizar Compra!</h1>
+            <!-- esta tag h1 sera preenchida dinamicamente dependendo do card produto escolhido!-->
+            <h1 style="font-family: 'Poppins'; font-size: xx-large; font-weight: 500; color: white;" id="product"></h1>
             
          </div>
         <form id="page_payment" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
@@ -51,12 +56,12 @@
 
                 <div style="display: flex; flex-direction: column;">
                     <label for="Nome" style="font-family: 'Poppins'; font-weight: 500; font-size: 20px;">Digite a senha do seu cartão!</label>
-                    <input name="Nome" type="text" class="purchase_input" id="purchase-senha_cartao" placeholder="">
+                    <input name="Nome" type="number" class="purchase_input" id="purchase-senha_cartao" placeholder="">
                 </div>
 
                 <div style="display: flex; flex-direction: column; margin-bottom: 40px;">
                     <label for="Nome" style="font-family: 'Poppins'; font-weight: 500; font-size: 20px;">Digite o código de segurança do seu cartão!</label>
-                    <input name="Nome" type="text" class="purchase_input" id="purchase-codigo-cartao" placeholder="">
+                    <input name="Nome" type="number" class="purchase_input" id="purchase-codigo-cartao" placeholder="">
                 </div>
                 <!-- Divs para o botao Comprar estilizados para parecer um bloco de lego-->
                 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 30%; margin-bottom: 50px; height: 80%; ">  
@@ -65,8 +70,8 @@
                         <div class="lego_brick_top" style="background-color: #AEEF97; border-color: #27462B;"></div>
                     </div>
                     <div class="lego_brick_body" style="width: 100%; height: 20%; background-color: #AEEF97; border-color: #27462B; padding: 0px;">
-                        <div style="display:flex; flex-direction:column; gap: 30px;">
-                            <button class="lego-button" style="margin-bottom: 25px; background-color: #AEEF97; border-style: none; font-family: 'Bricolage Grotesque'; font-weight: 400; font-size: 25px; width: 100%; height: 100%; margin-top: 20px; letter-spacing: 1px; color: #27462B;" type="submit">Comprar</button>
+                        <div style="display:flex; flex-direction:column; gap: 30px; ">
+                            <button class="card_button" style="background-color: #AEEF97; color: #27462B; border-color: #AEEF97;" type="submit">Comprar</button>
                     </div>                  
                 </div>      
             </div>
@@ -80,7 +85,7 @@
                 </div>
                 <div class="lego_brick_body" style="width: 100%; height: 20%; background-color: #FF9CAB; border-color: #720000; padding: 0px;">
                     <div style="display:flex; flex-direction:column; gap: 30px;">
-                        <button class="lego-button" style="margin-bottom: 25px; background-color: #FF9CAB; border-style: none; font-family: 'Bricolage Grotesque'; font-weight: 400; font-size: 25px; width: 100%; height: 100%; margin-top: 20px; letter-spacing: 1px; color: #850014;" onclick="location.href = './page_home.html'">Cancelar Compra</button>
+                        <button class="card_button" style="background-color: #FF9CAB; color: #720000; border-color: #FF9CAB;" onclick="location.href = './page_home.html'">Cancelar Compra</button>
                 </div>                  
         </div>
 
