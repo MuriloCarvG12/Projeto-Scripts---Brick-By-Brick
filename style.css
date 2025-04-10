@@ -74,9 +74,14 @@
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    
+    overflow: hidden;
     cursor: pointer;
     transition: transform 0.1s;
+}
+
+.lego-button:hover
+{
+    padding: 15px 25px;
 }
 
 .footer
@@ -129,6 +134,8 @@
     padding: 20px
 }
 
+
+
 .card_button
 {
     background-color: #ffce1c;
@@ -151,6 +158,12 @@
     color: #b48502
 }
 
+.card_button:hover
+{
+    padding: 15px 25px; 
+    background-color: #f7c30a;
+}
+
 /* estilizações para a pagina pagamento */
 .page_payment
 {
@@ -167,7 +180,7 @@
     margin-bottom: 10%;
     padding: 24px;
     gap: 24px;
-
+    overflow: hidden;
     border-style: solid;
     border-width: 5px;
     border-color: #b95b03; 
