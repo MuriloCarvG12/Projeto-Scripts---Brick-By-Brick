@@ -91,6 +91,6 @@ function payment(event)
     
     if(email && adress && card_password && card_security_code != "" && validateCPF(cpf))
         {
-            alert("ok!")
+            alert("Compra Realizada!")
         }
 }
