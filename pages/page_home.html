@@ -15,7 +15,7 @@
 
         <div class="header">
             <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 30px;">
-                <img style="width: 100px; height: 100px; border: 6px; border-style: solid; border-color: rgb(31, 31, 31);" src=".././images/logo.png" alt="Image">
+                <img style="max-width: 100px; max-height: 100px; border: 6px; border-style: solid; border-color: rgb(31, 31, 31);" src=".././images/logo.png" alt="Image">
                 <h2 style="font-family: 'Tahoma'; font-size: xx-large; font-weight: 300;">Brick By Brick</h2>
             </div>
         </div>
@@ -24,11 +24,11 @@
             <h1 style="font-family: 'Poppins'; font-size: xx-large; font-weight: 500; color: white;">Bem-vindo à Brick by Brick!</h1>
          </div>
 
-        <div class="page_body" style="justify-content: space-evenly; border-color: #91c068; background-color: #D9F7BE;">
+        <div class="page_body" style="justify-content: space-evenly; border-color: #91c068; background-color: #D9F7BE; display: flex; flex-wrap: wrap;">
             <!-- Conteudo para a div central da pagina home-->
 
             <!-- Introducao da loja -->
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 30%;">  
+            <div style="flex: 1 1 300px; max-width: 100%; padding: 20px;"> 
                     <!-- Div para simular encaixes de um bloco lego-->
                     <div id="lego_brick_top" style="display: flex; flex-direction: row; width: 100%; justify-content: space-around;">
                         <div class="lego_brick_top"></div>
@@ -45,7 +45,7 @@
             </div>
 
             <!-- Historia da loja -->
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 30%;">  
+            <div style="flex: 1 1 300px; max-width: 100%; padding: 20px;"> 
                 <!-- Div para simular encaixes de um bloco lego--> 
                 <div id="lego_brick_top" style="display: flex; flex-direction: row; width: 100%; justify-content: space-around;">
                     <div class="lego_brick_top" style="background-color: #FF9CAB; border-color: #720000;"></div>
@@ -63,7 +63,7 @@
             </div>
 
             <!-- Tipos de produtos oferecidos pela loja -->
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 30%;">  
+            <div style="flex: 1 1 300px; max-width: 100%; padding: 20px;"> 
                 <!-- Div para simular encaixes de um bloco lego--> 
                 <div id="lego_brick_top" style="display: flex; flex-direction: row; width: 100%; justify-content: space-around;">
                     <div class="lego_brick_top" style="background-color: #C7EFFE; border-color: #0055BF;"></div>
@@ -97,10 +97,10 @@
         </div>
 
         <!--- div container para a apresentação da loja-->
-        <div style="background-color: #91c068; width: 100%; padding-top: 2%; padding-bottom: 1%; border-color: #91c068; border-style: solid; border-width: 5px; text-align: center;  border-bottom-width: 0px;">
+        <div style="background-color: #91c068; min-width: none; width: 90%; max-width: 100%; padding-top: 2%; padding-bottom: 1%; border-color: #91c068; border-style: solid; border-width: 5px; text-align: center;  border-bottom-width: 0px;">
             <h1 style="font-family: 'Poppins'; font-size: xx-large; font-weight: 500; color: white;">Conheça alguns dos nossos produtos</h1>
          </div>
-        <div id="store_products_display" class="page_body" style="justify-content: space-around; border-color: #91c068; background-color: #D9F7BE; padding: 50px;">
+        <div id="store_products_display" class="page_body" style="gap: 30px; justify-content: space-around; border-color: #91c068; background-color: #D9F7BE; padding: 50px; min-width: none; width: auto;max-width: 90%;">
 
             <!-- Card para o Conjunto Casa de Passaros + Chalés Acouchegantes -->
             <div>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="product_card">
                     <h3 style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; color: #333; margin-bottom: 10px;">Conjunto Casa de Passaros + Chalés Acouchegantes</h3>
-                    <img src="./../images/set3.webp" style="width: 450px; height: 350px;">
+                    <img src="./../images/set3.webp"  style="width: 100%; height: auto; max-width: 450px; max-height: 350px;">
                     <button class="card_button" onclick= "location.href='./page_pagamento.html?id=Conjunto Casa de Passaros + Chalés Acouchegantes'">Comprar</button>
                     
                 </div>
@@ -124,7 +124,9 @@
                 </div>
                 <div class="product_card" style="background-color: #f6e9b0; border-color: #cfc595;">
                     <h3 style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; color: #333; margin-bottom: 10px;">Conjunto Biblioteca Britanica</h3>
-                    <img src="./../images/set1.jpg" style="width: 450px; height: 350px;">
+
+                    <img src="./../images/set1.jpg" style="width: 100%; height: 338px; max-width: 450px; max-height: 400px;">
+
                     <button class="card_button" onclick= "location.href='./page_pagamento.html?id=Conjunto Biblioteca Britanica'">Comprar</button>
                     
                 </div>
@@ -138,7 +140,7 @@
                 </div>
                 <div class="product_card" style="background-color: #d3e2ff; border-color: #96b8fc;">
                     <h3 style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; color: #333; margin-bottom: 10px;">Conjunto Casa Moana e Stitch</h3>
-                    <img src="./../images/set2.webp" style="width: 450px; height: 350px;">
+                    <img src="./../images/set2.webp" style="width: 100%; height: 338px; max-width: 450px; max-height: 350px;">
                     <button class="card_button" onclick= "location.href='./page_pagamento.html?id=Conjunto Casa Moana e Stitch'">Comprar</button>
                     
                 </div>
